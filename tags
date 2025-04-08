@@ -1,0 +1,173 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCH	Makefile	/^export ARCH=arm$/;"	m
+BITMAPFILEHEADER	fb.h	/^}BITMAPFILEHEADER ;$/;"	t	typeref:struct:tagBITMAPFILEHEADER
+BITMAPINFOHEADER	fb.h	/^}BITMAPINFOHEADER;$/;"	t	typeref:struct:tagBITMAPINFOHEADER
+BUILD_DIR	Makefile	/^BUILD_DIR = build$/;"	m
+CC	Makefile	/^CC = $(CROSS_COMPILE)gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -g -MMD -MP $(INC_DIR)$/;"	m
+CROSS_COMPILE	Makefile	/^export CROSS_COMPILE=arm-linux-gnueabihf-$/;"	m
+DATATYPE	list.h	/^}DATATYPE;$/;"	t	typeref:struct:data
+DWORD	fb.h	/^typedef unsigned int DWORD;$/;"	t
+ENTER_CRITICAL_AREA	main.c	10;"	d	file:
+E_W	list.h	/^	char E_W;$/;"	m	struct:data
+FB_DEV	freetype.h	8;"	d
+FB_DEV	test.c	14;"	d	file:
+INC_DIR	Makefile	/^INC_DIR = -I\/home\/linux\/imx\/tool\/libfreetype\/include\/freetype2 \\$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $(LIB_DIR) -lfreetype -lpng -lz -lm -lpthread$/;"	m
+LIB_DIR	Makefile	/^LIB_DIR = -L\/home\/linux\/imx\/tool\/libfreetype\/lib \\$/;"	m
+LIST_DATA	list.h	/^}LIST_DATA;$/;"	t	typeref:struct:thread_node
+LIST_LINK	list.h	/^}LIST_LINK;$/;"	t	typeref:struct:Link
+LONG	fb.h	/^typedef unsigned int LONG;$/;"	t
+Link	list.h	/^typedef struct Link{$/;"	s
+MAIL_DATA	list.h	/^}MAIL_DATA;$/;"	t	typeref:struct:mail_data
+MBS	main.c	/^}MBS;$/;"	t	typeref:struct:mail_box_system	file:
+N_S	list.h	/^	char N_S;$/;"	m	struct:data
+OBJS	Makefile	/^OBJS = $(addprefix $(BUILD_DIR)\/, $(SRC:.c=.o))$/;"	m
+QUIT_CRITICAL_AREA	main.c	11;"	d	file:
+Que	list.h	/^}Que, *pQue;$/;"	t	typeref:struct:queue
+RGB	fb.h	/^}RGB;$/;"	t	typeref:struct:__rgb
+SRC	Makefile	/^SRC = freetype.c main.c getdata.c list.c queue.c$/;"	m
+TARGET	Makefile	/^TARGET = main$/;"	m
+WORD	fb.h	/^typedef unsigned short WORD;$/;"	t
+_FB_H	fb.h	2;"	d
+_FREETYPE_H	freetype.h	2;"	d
+_GETDATA_H	getdata.h	2;"	d
+__LIST_H__	list.h	2;"	d
+__QUEUE_H__	queue.h	2;"	d
+__color	fb.h	/^typedef union __color$/;"	u
+__rgb	fb.h	/^typedef struct __rgb$/;"	s
+a	fb.h	/^	unsigned char a;$/;"	m	struct:__rgb
+argb8888_to_rgb565	freetype.h	10;"	d
+argb8888_to_rgb565	test.c	15;"	d	file:
+b	fb.h	/^	unsigned char b;$/;"	m	struct:__rgb
+bfOffBits	fb.h	/^	DWORD bfOffBits; \/\/ 位图数据的起始位置，以相对于位图文件头的偏移量表示，以字节为单位$/;"	m	struct:tagBITMAPFILEHEADER
+bfReserved1	fb.h	/^	WORD bfReserved1; \/\/ 位图文件保留字，必须为0$/;"	m	struct:tagBITMAPFILEHEADER
+bfReserved2	fb.h	/^	WORD bfReserved2; \/\/ 位图文件保留字，必须为0$/;"	m	struct:tagBITMAPFILEHEADER
+bfSize	fb.h	/^	DWORD bfSize; \/\/ 位图文件的大小，以字节为单位$/;"	m	struct:tagBITMAPFILEHEADER
+bfType	fb.h	/^	WORD bfType; \/\/ 位图文件的类型，必须为BM$/;"	m	struct:tagBITMAPFILEHEADER
+biBitCount	fb.h	/^	WORD biBitCount; \/\/每个像素所需的位数，必须是1(双色),$/;"	m	struct:tagBITMAPINFOHEADER
+biClrImportant	fb.h	/^	DWORD	biClrImportant;\/\/位图显示过程中重要的颜色数$/;"	m	struct:tagBITMAPINFOHEADER
+biClrUsed	fb.h	/^	DWORD	biClrUsed; \/\/位图实际使用的颜色表中的颜色数$/;"	m	struct:tagBITMAPINFOHEADER
+biCompression	fb.h	/^	DWORD biCompression; \/\/位图压缩类型，必须是0(不压缩),$/;"	m	struct:tagBITMAPINFOHEADER
+biHeight	fb.h	/^	LONG biHeight;   \/\/	位图的高度，以像素为单位$/;"	m	struct:tagBITMAPINFOHEADER
+biPlanes	fb.h	/^	WORD biPlanes;   \/\/	目标设备的级别，必须为1$/;"	m	struct:tagBITMAPINFOHEADER
+biSize	fb.h	/^	DWORD biSize;    \/\/本结构所占用字节数$/;"	m	struct:tagBITMAPINFOHEADER
+biSizeImage	fb.h	/^	DWORD biSizeImage;  \/\/位图的大小，以字节为单位$/;"	m	struct:tagBITMAPINFOHEADER
+biWidth	fb.h	/^	LONG biWidth;    \/\/	位图的宽度，以像素为单位$/;"	m	struct:tagBITMAPINFOHEADER
+biXPelsPerMeter	fb.h	/^	LONG  biXPelsPerMeter;\/\/位图水平分辨率，每米像素数$/;"	m	struct:tagBITMAPINFOHEADER
+biYPelsPerMeter	fb.h	/^	LONG biYPelsPerMeter;\/\/	位图垂直分辨率，每米像素数$/;"	m	struct:tagBITMAPINFOHEADER
+buffer	main.c	/^char buffer[512];$/;"	v
+col	fb.h	/^	unsigned int col;$/;"	m	union:__color
+color	fb.h	/^}color;$/;"	t	typeref:union:__color
+copy_mem	freetype.c	/^void copy_mem(int x, int y, int width, int height)$/;"	f
+copy_mem	test.c	/^void copy_mem(int x, int y, int width, int height)$/;"	f
+create_mail_box_system	main.c	/^MBS* create_mail_box_system()$/;"	f
+data	list.h	/^    DATATYPE data;$/;"	m	struct:mail_data
+data	list.h	/^    MAIL_DATA data;$/;"	m	struct:queue
+data	list.h	/^typedef struct data$/;"	s
+data_collect_th	main.c	/^void* data_collect_th(void* arg)$/;"	f
+destroy	queue.c	/^void destroy(LIST_LINK *list_head)$/;"	f
+destroy_mail_box_system	main.c	/^int destroy_mail_box_system(MBS*mbs)$/;"	f
+draw_cicle	fb.c	/^void draw_cicle(int x0, int y0, int r, unsigned int col)$/;"	f
+draw_point	fb.c	/^void draw_point(int x, int y,unsigned int col)$/;"	f
+draw_x_line	fb.c	/^void draw_x_line(int x, int y, int len, unsigned int col)$/;"	f
+draw_y_line	fb.c	/^void draw_y_line(int x, int y, int len, unsigned int col)$/;"	f
+elem	list.h	/^    LIST_DATA elem;$/;"	m	struct:Link
+end_list	main.c	/^LIST_LINK *end_list = NULL;$/;"	v
+face	freetype.c	/^static FT_Face face;$/;"	v	file:
+face	test.c	/^static FT_Face face;$/;"	v	file:
+fb_close	fb.c	/^void fb_close()$/;"	f
+fb_dev_init	freetype.c	/^int fb_dev_init(void)$/;"	f
+fb_dev_init	test.c	/^static int fb_dev_init(void)$/;"	f	file:
+fb_fix	freetype.c	/^struct fb_fix_screeninfo fb_fix;$/;"	v	typeref:struct:fb_fix_screeninfo
+fb_fix	test.c	/^struct fb_fix_screeninfo fb_fix;$/;"	v	typeref:struct:fb_fix_screeninfo
+fb_init	fb.c	/^int fb_init()$/;"	f
+fb_var	freetype.c	/^struct fb_var_screeninfo fb_var;$/;"	v	typeref:struct:fb_var_screeninfo
+fb_var	test.c	/^struct fb_var_screeninfo fb_var;$/;"	v	typeref:struct:fb_var_screeninfo
+fd	fb.c	/^static int fd;$/;"	v	file:
+fd	main.c	/^int fd = 0;$/;"	v
+fd	test.c	/^static int fd = -1;$/;"	v	file:
+fd_fb	freetype.c	/^int fd_fb = -1;$/;"	v
+freetype_init	freetype.c	/^int freetype_init(const char *font, int angle)$/;"	f
+freetype_init	test.c	/^static int freetype_init(const char *font, int angle)$/;"	f	file:
+g	fb.h	/^	unsigned char g;$/;"	m	struct:__rgb
+get_th_name	main.c	/^char *get_th_name(MBS*msb)$/;"	f
+gps_init	getdata.c	/^int gps_init()$/;"	f
+head	queue.c	/^Que *head, *tail;$/;"	v
+height	freetype.c	/^static unsigned int height;                \/\/LCD高度$/;"	v	file:
+height	test.c	/^static unsigned int height; \/\/LCD 高度$/;"	v	file:
+id	list.h	/^	int id;$/;"	m	struct:data
+id_of_recver	list.h	/^    pthread_t   id_of_recver;$/;"	m	struct:mail_data
+id_of_sender	list.h	/^    pthread_t   id_of_sender;$/;"	m	struct:mail_data
+in_queue	queue.c	/^int in_queue(LIST_LINK *list_head, MAIL_DATA *data)$/;"	f
+init_que	queue.c	/^int init_que(LIST_LINK *list_head)$/;"	f
+latitude_data	list.h	/^	double latitude_data;$/;"	m	struct:data
+lcd_draw_character	freetype.c	/^void lcd_draw_character(int x, int y,$/;"	f
+lcd_draw_character	test.c	/^static void lcd_draw_character(int x, int y,$/;"	f	file:
+library	freetype.c	/^static FT_Library library;$/;"	v	file:
+library	test.c	/^static FT_Library library;$/;"	v	file:
+list_add	list.c	/^void list_add(LIST_LINK* head, LIST_LINK *info)$/;"	f
+list_for_each	list.c	/^LIST_LINK * list_for_each(LIST_LINK* head, char *name)$/;"	f
+list_init	list.c	/^LIST_LINK * list_init()$/;"	f
+longitude_data	list.h	/^	double longitude_data;$/;"	m	struct:data
+mail_box_system	main.c	/^typedef struct mail_box_system$/;"	s	file:
+mail_data	list.h	/^typedef struct mail_data$/;"	s
+mail_head	list.h	/^    Que *mail_head, *mail_tail;$/;"	m	struct:thread_node
+mail_tail	list.h	/^    Que *mail_head, *mail_tail;$/;"	m	struct:thread_node
+main	fb.c	/^int main(int argc, const char *argv[])$/;"	f
+main	main.c	/^int main()$/;"	f
+main	test.c	/^int main(int argc, char *argv[])$/;"	f
+mbs	main.c	/^MBS* mbs;$/;"	v
+mutex	main.c	/^    pthread_mutex_t mutex;  \/\/保护邮件系统$/;"	m	struct:mail_box_system	file:
+name	list.h	/^    char name[256];        \/\/线程名字 ,必须唯一$/;"	m	struct:thread_node
+name_of_recver	list.h	/^    char       name_of_recver[256];$/;"	m	struct:mail_data
+name_of_sender	list.h	/^    char       name_of_sender[256];$/;"	m	struct:mail_data
+next	list.h	/^    struct Link *next;$/;"	m	struct:Link	typeref:struct:Link::Link
+next	list.h	/^    struct queue* next;$/;"	m	struct:queue	typeref:struct:queue::queue
+out_queue	queue.c	/^int out_queue(LIST_LINK *list_head, MAIL_DATA *data)$/;"	f
+pQue	list.h	/^}Que, *pQue;$/;"	t	typeref:struct:queue
+parse_gpsdata	getdata.c	/^int parse_gpsdata (char *buffer, char **gpsdata) $/;"	f
+pi	fb.c	69;"	d	file:
+pmem	freetype.c	/^static unsigned char *pmem;$/;"	v	file:
+pmem	test.c	/^static unsigned char *pmem;$/;"	v	file:
+pthread_index	main.c	/^unsigned pthread_index;$/;"	v
+queue	list.h	/^typedef struct queue{$/;"	s
+r	fb.h	/^	unsigned char r;$/;"	m	struct:__rgb
+recv_msg	main.c	/^int recv_msg(MBS*msb,char*sendname,DATATYPE *data)$/;"	f
+register_to_mail_system	main.c	/^int  register_to_mail_system(MBS *mbs,char name[],th_fun th)$/;"	f
+rgb	fb.h	/^	RGB rgb;$/;"	m	union:__color
+save_mem	freetype.c	/^void save_mem()$/;"	f
+save_mem	test.c	/^void save_mem()$/;"	f
+screen_base	fb.c	/^unsigned char *screen_base = NULL;$/;"	v
+screen_base	freetype.c	/^static unsigned int *screen_base = NULL; \/\/LCD显存基地址 RGB565$/;"	v	file:
+screen_base	test.c	/^static unsigned int *screen_base = NULL;$/;"	v	file:
+screen_size	freetype.c	/^static unsigned long screen_size;$/;"	v	file:
+screen_size	test.c	/^static unsigned long screen_size;$/;"	v	file:
+send_msg	main.c	/^int send_msg(MBS*msb, char*recvname, DATATYPE data)$/;"	f
+show_bmp	fb.c	/^int show_bmp(const char *filename, int x0, int y0)$/;"	f
+show_sem	main.c	/^sem_t show_sem, sock_sem;$/;"	v
+show_th	main.c	/^void* show_th(void* arg)$/;"	f
+size	fb.c	/^static int size = 0;$/;"	v	file:
+sock_sem	main.c	/^sem_t show_sem, sock_sem;$/;"	v
+sock_th	main.c	/^void* sock_th(void* arg)$/;"	f
+tagBITMAPFILEHEADER	fb.h	/^typedef struct tagBITMAPFILEHEADER$/;"	s
+tagBITMAPINFOHEADER	fb.h	/^typedef struct tagBITMAPINFOHEADER$/;"	s
+tail	queue.c	/^Que *head, *tail;$/;"	v
+th	list.h	/^    th_fun th;$/;"	m	struct:thread_node
+th_fun	list.h	/^typedef void*(*th_fun)(void* arg);$/;"	t
+thread_list	main.c	/^    LIST_LINK *thread_list;$/;"	m	struct:mail_box_system	file:
+thread_node	list.h	/^typedef struct thread_node$/;"	s
+tid	list.h	/^    pthread_t tid;         \/\/线程id号$/;"	m	struct:thread_node
+uart_setup	getdata.c	/^int uart_setup(int fd)$/;"	f
+unregister_from_mailbox	main.c	/^int unregister_from_mailbox(MBS*msb,char*name)$/;"	f
+utc_time	list.h	/^	double utc_time;	$/;"	m	struct:data
+valadity	list.h	/^	char valadity;$/;"	m	struct:data
+vinfo	fb.c	/^static struct fb_var_screeninfo vinfo;$/;"	v	typeref:struct:fb_var_screeninfo	file:
+wait_all_end	main.c	/^int wait_all_end(MBS*msb)$/;"	f
+width	freetype.c	/^static unsigned int width;                 \/\/LCD宽度$/;"	v	file:
+width	test.c	/^static unsigned int width; \/\/LCD 宽度$/;"	v	file:
